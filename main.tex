@@ -1,0 +1,213 @@
+\documentclass[a4paper,8pt]{article}
+
+\usepackage{parskip} 
+\usepackage{hologo}
+%\usepackage{fontspec}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.4in, bottom=.4in]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.42\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{2pt}{2pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\color[HTML]{110223}%{1C033C}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+% \usepackage{times}
+
+% For underline
+\usepackage[normalem]{ulem}
+
+
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\color[HTML]{1C033C} \Huge{Italo Cabral Da Silva Nunes} \\[6pt]
+\\
+\textcolor[HTML]{371e77}{{{{\faEnvelope} italocsn05@gmail.com}} $|$}
+\textcolor[HTML]{371e77}{{{\faMobile} +55 (11)98416-9397}}
+
+\textcolor[HTML]{371e77}{\underline{{\raisebox{-0.05\height}{\faGithub}github.com/italocsn05}} $|$}
+\textcolor[HTML]{371e77}{\underline{{\raisebox{-0.05\height}{\faLinkedin}linkedin.com/in/italocsn/}}}
+\end{tabularx}
+
+\section{Skills}
+\color[HTML]{1C033C}\textbf{Languages:} Java, JavaScript, TypeScript, Python, SQL, Swift, Kotlin\\[3pt]
+\color[HTML]{1C033C}\textbf{Technologies \& Tools:} Selenium, Playwright, WebDriver.IO, Appium, Git, BrowserStack, Postman, Datadog, Azure DevOps, Jira, Postgresql, GitHub Copilot, ClineBot, Cursor AI, Cypress, Claude, Claude Code\\[3pt]
+
+%Experience
+\section{Work Experience}
+
+%Lumenalta
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{{Lumenalta, New York, Remote}} \hfill \color[HTML]{371e77} Aug 2025 - Present \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Senior Quality Assurance Automation Engineer / Tech Lead (Consultant) -- Weight Watchers}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Planned and built the entire mobile test automation suite from scratch, delivering 527 test scenarios across iOS and Android while acting as Tech Lead and defining the framework architecture and standards.
+        \item Drove accessibility-id instrumentation directly in the apps (Swift on iOS, Kotlin on Android), adding 657 ids on iOS and 782 on Android, which enabled reliable automation, reduced flakiness, and increased suite stability and confidence.
+        \item Performed manual accessibility testing with TalkBack (Android) and VoiceOver (iOS) to validate inclusive user experiences.
+        \item Appium, WebdriverIO, TypeScript, Swift, Kotlin, Claude, Claude Code
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+%Thomson Reuters
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{{Thomson Reuters, São Paulo - Brazil}} \hfill \color[HTML]{371e77} Jun 2022 - Aug 2025 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Senior Quality Assurance Automation Engineer}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Planned and implemented all test automation from scratch, effectively acting as Tech Lead (the responsibility, though not the official title), and integrated it into CI/CD pipelines with quality gates to ensure continuous software quality.
+        \item Delivered automation coverage across a broad product landscape: 3 mobile apps, an internet-banking web application, a desktop application, and multiple REST API services.
+        \item Cross-squad collaboration in defining processes and technologies, as well as developing tools and conducting training sessions to optimize workflows and team empowerment.
+        \item Plan, design, and execute manual tests for API, web and mobile applications
+        \item Playwright, Webdriver.io, Typescript, Postman, Postgres, Datadog, Git, Github, Github Actions, Github Copilot, Cursor, ClineBot, BrowserStack, Claude, Claude Code
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+%WEX Europe Services Limited
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{{WEX Europe Services Limited, Remote}} \hfill \color[HTML]{371e77} Jan 2024 - Jul 2024 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Senior Quality Assurance Automation Engineer (Freelance Consultant)}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Executed tests across Salesforce's UI and API layers, ensuring full functionality and data integrity.
+        \item Validated critical integrations between Salesforce and other services to ensure seamless data communication and workflow.
+        \item Utilized Python and Robot Framework to create and maintain automated tests
+        \item Robotframework, Postman, Git, Github, Github Actions, Python
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+%Alterdata Software
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{{Alterdata Software, Remote}} \hfill \color[HTML]{371e77} Jan 2022 - Jun 2022 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Quality Assurance Automation Analyst}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item System migration from Windows to web, enhancing performance and user experience.
+        \item Developed automated tests with JavaScript and Cypress
+        \item Documented bugs and improved quality processes, contributing to streamlined operations.
+        \item Supported CI/CD integration with Git, GitLab, and Docker
+        \item Produced user manuals and training materials, facilitating knowledge transfer.
+        \item Cypress, JavaScript, Git, GitLab, GitLab Actions, Docker
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+%Yaman
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{{Yaman, São Paulo - Brazil, Remote}} \hfill \color[HTML]{371e77} Feb 2020 - Dec 2021 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Quality Assurance Analyst (Consultant) -- F1rst Santander}}\ \hfill \color[HTML]{4B28A4} Apr 2021 - Dec 2021 \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Created and analyzed test scenarios by gathering requirements using Jira, and executed manual, exploratory, and service tests.
+        \item Participated in Scrum ceremonies including Release Planning, Sprint Planning, Review, Retro, and Daily meetings.
+        \item Identified, documented, and reported software defects, and proposed enhancements to improve software quality and efficiency.
+    \end{itemize}
+\end{minipage}\\[6pt]
+\color[HTML]{371e77}\textbf{\textit{Test Automation Technician (Consultant) -- B3 (Brasil, Bolsa, Balcão)}}\ \hfill \color[HTML]{4B28A4} Apr 2020 - Apr 2021 \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Developed automated web tests using Java, Selenium, JUnit, Cucumber, BDD, and Gherkin.
+        \item Implemented automated API tests with Java, RestAssured, JUnit, Cucumber, BDD, and Gherkin.
+        \item Created test data using SQL with INSERT, SELECT, DELETE, UPDATE, WHERE, and JOIN commands, and ran builds on Jenkins for continuous integration and deployment.
+        \item Java, Selenium, RestAssured, JUnit, Cucumber, BDD, Gherkin, SQL, Jenkins, Postman, Jira
+    \end{itemize}
+\end{minipage}\\[6pt]
+\color[HTML]{371e77}\textbf{\textit{IT Intern}}\ \hfill \color[HTML]{4B28A4} Feb 2020 - Apr 2020 \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Completed a three-month intensive bootcamp focused on software quality, building the foundation for the Test Automation Technician and Quality Assurance Analyst roles that followed.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+% Education
+\section{Education}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{Fatec Franco da Rocha} & \hfill \color[HTML]{371e77} Aug 2018 - Sep 2022 \\
+\color[HTML]{371e77} Information Technology Management & \hfill \color[HTML]{4B28A4} \textit{\textbf{}} \\
+\multicolumn{2}{@{}X@{}}{Relevant Coursework: Discrete Mathematics, Programming Languages, Software Engineering and Applications, Database, Project Management, Technology Applied Legislation}
+\end{tabularx}\\[3pt]
+
+% Languages
+\section{Languages}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item \textbf{English} Proficient
+         \item \textbf{Portuguese} Native
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}\\[3pt]
+
+% Awards and Certificates
+\section{Awards and Certificates}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item \textbf{\href{https://verify.skilljar.com/c/b7pedaccpvjp}{Claude Code in Action}} Anthropic Education (April 3, 2026)
+        \item \textbf{Java Polymorphism: Understanding Inheritance and Interfaces} Alura
+        \item \textbf{Java OOP: Introduction to Object-Oriented Programming} Alura
+        \item \textbf{UI Design Patterns: Usability in Mobile Interfaces} Alura
+        \item \textbf{Best Practices in Test Automation with Cypress} Udemy
+        \item \textbf{Scrum Foundation Professional Certificate} CertiProf
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}\\[3pt]
+
+% Leadership and Volunteering
+\section{Leadership and Volunteering}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item \textbf{Fundraiser (Nov 2018 - Dec 2018)} Organized a fundraising campaign with the support of students from Fatec Franco Da Rocha and the local community of Franco Da Rocha. We collected hygiene supplies and non-perishable food items to donate to the residents of the Titio Otávio Elderly Home, significantly contributing to the well-being of the elderly.
+         \item \textbf{Photographer (Sep 2018)} I was responsible for capturing photos during the "Physics Show" event at Fatec Franco Da Rocha. This event featured a series of interactive scientific experiments, developed and presented by Physics students from the University of São Paulo (USP).
+        \item \textbf{Event Organizer (Jul 2018 - Sep 2018)} As a member organizer for the lecture "Women's Participation in the Information Technology Market" at Fatec Franco Da Rocha. My responsibilities included scheduling the event, promoting it through various channels, communicating with the local community, and managing the event's online presence. We invited three speakers from the IT field to share their valuable experiences with us.
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}\\[3pt]
+
+
+
+\end{document}
