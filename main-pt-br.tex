@@ -1,0 +1,203 @@
+\documentclass[a4paper,8pt]{article}
+
+\usepackage{parskip}
+\usepackage{hologo}
+%\usepackage{fontspec}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.4in, bottom=.4in]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.42\textwidth}
+
+%custom \section
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by:
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{2pt}{2pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false, hidelinks]{hyperref}
+\color[HTML]{110223}%{1C033C}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+% \usepackage{times}
+
+% For underline
+\usepackage[normalem]{ulem}
+
+% Idioma portugu\^es
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+
+
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty}
+
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\color[HTML]{1C033C} \Huge{Italo Cabral Da Silva Nunes} \\[6pt]
+\\
+\textcolor[HTML]{371e77}{{{{\faEnvelope} italocsn05@gmail.com}} $|$}
+\textcolor[HTML]{371e77}{{{\faMobile} +55 (11)98416-9397}}
+
+\textcolor[HTML]{371e77}{\underline{{\raisebox{-0.05\height}{\faGithub}github.com/italocsn05}} $|$}
+\textcolor[HTML]{371e77}{\underline{{\raisebox{-0.05\height}{\faLinkedin}linkedin.com/in/italocsn/}}}
+\end{tabularx}
+
+\section{Compet\^encias}
+\color[HTML]{1C033C}\textbf{Linguagens:} Java, JavaScript, TypeScript, Python, SQL, Swift, Kotlin\\[3pt]
+\color[HTML]{1C033C}\textbf{Tecnologias \& Ferramentas:} Selenium, Playwright, WebDriver.IO, Appium, Git, BrowserStack, Postman, Datadog, Azure DevOps, Jira, Postgresql, GitHub Copilot, ClineBot, Cursor AI, Cypress, Claude, Claude Code\\[3pt]
+
+%Experi\^encia
+\section{Experi\^encia Profissional}
+
+%Lumenalta
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{{Lumenalta, Nova York, Remoto}} \hfill \color[HTML]{371e77} Ago 2025 - Atual \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Engenheiro S\^enior de Automa\c{c}\~ao de Qualidade / Tech Lead (Consultor) -- Weight Watchers}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Planejei e constru\'i toda a su\'ite de automa\c{c}\~ao de testes mobile do zero, entregando 527 cen\'arios de teste em iOS e Android, atuando como Tech Lead e definindo a arquitetura e os padr\~oes do framework.
+        \item Conduzi a instrumenta\c{c}\~ao de accessibility-id diretamente nos aplicativos (Swift no iOS, Kotlin no Android), adicionando 657 ids no iOS e 782 no Android, o que viabilizou uma automa\c{c}\~ao confi\'avel, reduziu a instabilidade e aumentou a estabilidade e a confian\c{c}a da su\'ite.
+        \item Realizei testes manuais de acessibilidade com TalkBack (Android) e VoiceOver (iOS) para validar experi\^encias de usu\'ario inclusivas.
+        \item Appium, WebdriverIO, TypeScript, Swift, Kotlin, Claude, Claude Code
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+%Thomson Reuters
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{{Thomson Reuters, S\~ao Paulo - Brasil}} \hfill \color[HTML]{371e77} Jun 2022 - Ago 2025 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Engenheiro S\^enior de Automa\c{c}\~ao de Qualidade}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Planejei e implementei toda a automa\c{c}\~ao de testes do zero, atuando efetivamente como Tech Lead (a responsabilidade, ainda que n\~ao o t\'itulo oficial), e integrei-a aos pipelines de CI/CD com quality gates para garantir a qualidade cont\'inua do software.
+        \item Entreguei cobertura de automa\c{c}\~ao em um amplo portf\'olio de produtos: 3 aplicativos mobile, uma aplica\c{c}\~ao web de internet banking, uma aplica\c{c}\~ao desktop e m\'ultiplos servi\c{c}os de API REST.
+        \item Colabora\c{c}\~ao entre squads na defini\c{c}\~ao de processos e tecnologias, al\'em do desenvolvimento de ferramentas e da condu\c{c}\~ao de treinamentos para otimizar fluxos de trabalho e fortalecer a equipe.
+        \item Planejei, projetei e executei testes manuais para aplica\c{c}\~oes de API, web e mobile.
+        \item Playwright, Webdriver.io, Typescript, Postman, Postgres, Datadog, Git, Github, Github Actions, Github Copilot, Cursor, ClineBot, BrowserStack, Claude, Claude Code
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+%Alterdata Software
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{{Alterdata Software, Remoto}} \hfill \color[HTML]{371e77} Jan 2022 - Jun 2022 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Analista de Automa\c{c}\~ao de Qualidade}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Migra\c{c}\~ao de sistema de Windows para web, melhorando o desempenho e a experi\^encia do usu\'ario.
+        \item Desenvolvi testes automatizados com JavaScript e Cypress.
+        \item Documentei bugs e aprimorei processos de qualidade, contribuindo para opera\c{c}\~oes mais eficientes.
+        \item Apoiei a integra\c{c}\~ao de CI/CD com Git, GitLab e Docker.
+        \item Produzi manuais de usu\'ario e materiais de treinamento, facilitando a transfer\^encia de conhecimento.
+        \item Cypress, JavaScript, Git, GitLab, GitLab Actions, Docker
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+%Yaman
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{{Yaman, S\~ao Paulo - Brasil, Remoto}} \hfill \color[HTML]{371e77} Fev 2020 - Dez 2021 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Analista de Qualidade (Consultor) -- F1rst Santander}}\ \hfill \color[HTML]{4B28A4} Abr 2021 - Dez 2021 \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Criei e analisei cen\'arios de teste a partir do levantamento de requisitos usando Jira, e executei testes manuais, explorat\'orios e de servi\c{c}o.
+        \item Participei das cerim\^onias de Scrum, incluindo Release Planning, Sprint Planning, Review, Retro e Dailies.
+        \item Identifiquei, documentei e reportei defeitos de software, e propus melhorias para aumentar a qualidade e a efici\^encia do software.
+    \end{itemize}
+\end{minipage}\\[6pt]
+\color[HTML]{371e77}\textbf{\textit{T\'ecnico de Automa\c{c}\~ao de Testes (Consultor) -- B3 (Brasil, Bolsa, Balc\~ao)}}\ \hfill \color[HTML]{4B28A4} Abr 2020 - Abr 2021 \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Desenvolvi testes web automatizados usando Java, Selenium, JUnit, Cucumber, BDD e Gherkin.
+        \item Implementei testes de API automatizados com Java, RestAssured, JUnit, Cucumber, BDD e Gherkin.
+        \item Criei massa de dados de teste usando SQL com comandos INSERT, SELECT, DELETE, UPDATE, WHERE e JOIN, e executei builds no Jenkins para integra\c{c}\~ao e entrega cont\'inuas.
+        \item Java, Selenium, RestAssured, JUnit, Cucumber, BDD, Gherkin, SQL, Jenkins, Postman, Jira
+    \end{itemize}
+\end{minipage}\\[6pt]
+\color[HTML]{371e77}\textbf{\textit{Estagi\'ario de TI}}\ \hfill \color[HTML]{4B28A4} Fev 2020 - Abr 2020 \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Conclu\'i um bootcamp intensivo de tr\^es meses focado em qualidade de software, construindo a base para os cargos de T\'ecnico de Automa\c{c}\~ao de Testes e Analista de Qualidade que se seguiram.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+% Forma\c{c}\~ao
+\section{Forma\c{c}\~ao Acad\^emica}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{Fatec Franco da Rocha} & \hfill \color[HTML]{371e77} Ago 2018 - Set 2022 \\
+\color[HTML]{371e77} Gest\~ao da Tecnologia da Informa\c{c}\~ao & \hfill \color[HTML]{4B28A4} \textit{\textbf{}} \\
+\multicolumn{2}{@{}X@{}}{Disciplinas relevantes: Matem\'atica Discreta, Linguagens de Programa\c{c}\~ao, Engenharia de Software e Aplica\c{c}\~oes, Banco de Dados, Gest\~ao de Projetos, Legisla\c{c}\~ao Aplicada \`a Tecnologia}
+\end{tabularx}\\[3pt]
+
+% Idiomas
+\section{Idiomas}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item \textbf{Ingl\^es} Proficiente
+         \item \textbf{Portugu\^es} Nativo
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}\\[3pt]
+
+% Pr\^emios e Certifica\c{c}\~oes
+\section{Pr\^emios e Certifica\c{c}\~oes}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item \textbf{\href{https://verify.skilljar.com/c/b7pedaccpvjp}{Claude Code in Action}} Anthropic Education (3 de abril de 2026)
+        \item \textbf{Java Polymorphism: Understanding Inheritance and Interfaces} Alura
+        \item \textbf{Java OOP: Introduction to Object-Oriented Programming} Alura
+        \item \textbf{UI Design Patterns: Usability in Mobile Interfaces} Alura
+        \item \textbf{Best Practices in Test Automation with Cypress} Udemy
+        \item \textbf{Scrum Foundation Professional Certificate} CertiProf
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}\\[3pt]
+
+% Lideran\c{c}a e Volunt
+\section{Lideran\c{c}a e Voluntariado}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item \textbf{Arrecada\c{c}\~ao de Fundos (Nov 2018 - Dez 2018)} Organizei uma campanha de arrecada\c{c}\~ao com o apoio de estudantes da Fatec Franco Da Rocha e da comunidade local de Franco Da Rocha. Coletamos itens de higiene e alimentos n\~ao perec\'iveis para doar aos residentes do Lar de Idosos Titio Ot\'avio, contribuindo significativamente para o bem-estar dos idosos.
+         \item \textbf{Fot\'ografo (Set 2018)} Fui respons\'avel por registrar fotos durante o evento "Show de F\'isica" na Fatec Franco Da Rocha. O evento apresentou uma s\'erie de experimentos cient\'ificos interativos, desenvolvidos e apresentados por estudantes de F\'isica da Universidade de S\~ao Paulo (USP).
+        \item \textbf{Organizador de Evento (Jul 2018 - Set 2018)} Como membro organizador da palestra "Participa\c{c}\~ao das Mulheres no Mercado de Tecnologia da Informa\c{c}\~ao" na Fatec Franco Da Rocha. Minhas responsabilidades inclu\'iram agendar o evento, divulg\'a-lo por diversos canais, comunicar-me com a comunidade local e gerenciar a presen\c{c}a online do evento. Convidamos tr\^es palestrantes da \'area de TI para compartilhar suas valiosas experi\^encias conosco.
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}\\[3pt]
+
+
+
+\end{document}
